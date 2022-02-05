@@ -6,7 +6,7 @@ Create a single page APP where users can search for a specific drink from an API
 
 ## Technical requirements
 
-I will be using React to fetch the API.
+I will be using React to build the APP.
 
 ## Components Tree
 
@@ -29,7 +29,26 @@ I will be using React to fetch the API.
 - Create the index.js file into each component, which they will handle a function containing a return in JSX format.
   Note: the return must be inside a <div> or <> tag
 
-## Challenges / Lernings
+# Creating custom Hook
+
+- Create a folder called Hook to add the custom hooks.
+- It's best practice to call the custom hook use<i>HookName</i>. So. the follow the same rule as useState, useReducer (...)
+
+# Link pages using <Link> and <Routes>
+
+- Install the [React Router](https://reactrouter.com/docs/en/v6/getting-started/installation) as a dependence > module npm install react-router-dom@6
+- index.js:
+  import { BrowserRouter } from "react-router-dom" and wrap up teh app on <BrowserRouter> instead of <React.StrictMode>. Otherwise, the App wouldn't render using the Routes and you can use on the APP file.
+- app.js:
+  import Link, Routes and Route from react-router-dom;
+
+## Learnings / Practices
+
+- Use of the tag <Headers> when creating pages;
+- Create custom Hook useFetch;
+- Use of Routes (multiple pages APP)
+
+## Challenges
 
 - How to save an image on README file (format SVG or add the image on File)
 

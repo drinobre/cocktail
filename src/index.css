@@ -13,6 +13,57 @@ code {
 }
 
 .displayCard {
-  flex: auto;
+  display: flex;
+  flex-direction: wrap;
   background-color: red;
+}
+
+.search-group {
+  background-color: aqua;
+}
+
+/* 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  border: red;
+} */
+
+footer {
+  color: lightgray;
+  background: gray;
+  display: flex;
+  -ms-flex-align: center;
+}
+
+nav {
+  display: flex;
+  -ms-flex-align: center;
+}
+
+.navbar-right {
+  display: flex;
+  -ms-flex-align: right;
+}
+
+.single-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.single-card > * {
+  flex: 1 1 80px;
+}
+
+/* .grid-2-container {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.img_size_medium {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
 }
