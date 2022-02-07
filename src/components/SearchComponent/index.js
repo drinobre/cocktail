@@ -1,8 +1,7 @@
 import { React, useState } from "react";
+import SearchResults from "../SearchResultsComponent";
 
-// Shall I change the component name to UserInput?
-
-export default function SearchComponent({ input }) {
+export default function SearchComponent() {
   const [userInput, setUserInput] = useState("");
 
   function handleChange(e) {
@@ -21,7 +20,7 @@ export default function SearchComponent({ input }) {
     <div className="search-group">
       <input onChange={handleChange}></input>
       <button onClick={handleClick}>Search</button>
-      <p>Did you search: {apiSearch}</p>
+      <SearchResults input={apiSearch} />
     </div>
   );
 }

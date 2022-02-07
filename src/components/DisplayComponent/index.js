@@ -6,8 +6,13 @@ import React from "react";
 export default function DisplayComponent({ title, image, alt, description }) {
   return (
     <div className="displayCard">
-      <h2>{title}</h2>
-      <img src={image} alt={alt} />
+      <div className="displayCard-title">
+        <h2>{title}</h2>
+      </div>
+      <div>
+        <img class="img_size_medium" src={image} alt={alt} />
+      </div>
+
       <p>{description}</p>
     </div>
   );

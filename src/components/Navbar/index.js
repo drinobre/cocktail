@@ -8,8 +8,13 @@ export default function NavBar() {
           <Link to="/">Home</Link>
         </div>
         <div class="navbar-right">
-          <Link to="/surprise_me">Surprise me</Link>
-          <Link to="/search_drink">Search drink</Link>
+          <span>
+            {" "}
+            <Link to="/surprise_me">Surprise me</Link>
+          </span>
+          <span>
+            <Link to="/search_drink">Search drink</Link>
+          </span>
         </div>
       </nav>
     </>
