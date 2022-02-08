@@ -20,7 +20,7 @@ export default function SearchResults({ newResults, input }) {
 
   return (
     <>
-      <section class="multiple-card1">
+      <section class="container-multiple-cards">
         {/* map the fetch data with array name "drinks" and add the propreties name from the object */}
         {data.drinks.map(function ({
           idDrink,
@@ -29,16 +29,16 @@ export default function SearchResults({ newResults, input }) {
           strInstructions,
         }) {
           return (
-            <section class="multiple-card">
+            <div class="multiple-cards">
               <DisplayComponent
                 key={idDrink}
                 title={strDrink}
                 image={strDrinkThumb}
                 alt="drink"
-                //description={strInstructions}
+                // //description={strInstructions}
               />
               {/* <button>Read more</button> */}
-            </section>
+            </div>
           );
         })}
       </section>

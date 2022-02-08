@@ -5,15 +5,13 @@ import React from "react";
 
 export default function DisplayComponent({ title, image, alt, description }) {
   return (
-    <div className="displayCard">
-      <div className="displayCard-title">
-        <h2>{title}</h2>
-      </div>
-      <div>
-        <img class="img_size_medium" src={image} alt={alt} />
-      </div>
-
+    <>
+      <h2>{title}</h2>
+      <img class="img_size_medium" src={image} alt={alt} />
       <p>{description}</p>
-    </div>
+      <span>
+        <button>Read more</button>
+      </span>
+    </>
   );
 }

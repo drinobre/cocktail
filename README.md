@@ -42,6 +42,10 @@ I will be using React to build the APP.
 - app.js:
   import Link, Routes and Route from react-router-dom;
 
+# Use of Semantic UI React
+
+- install the [Semantic Ui React](https://react.semantic-ui.com/usage/) > npm install semantic-ui-react semantic-ui-css
+
 ## Learnings / Practices
 
 - Use of the tag <Headers> when creating pages;

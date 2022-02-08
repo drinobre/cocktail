@@ -1,5 +1,6 @@
 import React from "react";
 import DisplayComponent from "../components/DisplayComponent";
+import SurpriseMeComponentTest from "../components/SurpriseMeComponent copy";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,8 @@ export default function HomePage() {
           <DisplayComponent title="Title3" />
         </div>
       </main> */}
+
+      {/* <SurpriseMeComponentTest /> */}
     </>
   );
 }
