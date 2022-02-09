@@ -6,6 +6,7 @@ export default function NavBar() {
       <nav>
         <div class="navbar-left">
           <Link to="/">Home</Link>
+          Welcome to Drink API
         </div>
         <div class="navbar-right">
           <span>

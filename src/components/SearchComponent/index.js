@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import SearchResults from "../SearchResultsComponent";
+import { Button, Input } from "semantic-ui-react";
 
 export default function SearchComponent() {
   const [userInput, setUserInput] = useState("");
@@ -17,10 +18,16 @@ export default function SearchComponent() {
   }
 
   return (
-    <div className="search-group">
-      <input onChange={handleChange}></input>
-      <button onClick={handleClick}>Search</button>
-      <SearchResults input={apiSearch} />
-    </div>
+    <>
+      <div className="search-group">
+        <Input onChange={handleChange} placeholder="Search..." />
+        {/* <input onChange={handleChange}></input> */}
+        <Button onClick={handleClick}>Search</Button>
+        {/* <button onClick={handleClick}>Search</button> */}
+      </div>
+      <div>
+        <SearchResults input={apiSearch} />
+      </div>
+    </>
   );
 }

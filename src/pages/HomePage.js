@@ -1,21 +1,16 @@
 import React from "react";
-import DisplayComponent from "../components/DisplayComponent";
-import SurpriseMeComponentTest from "../components/SurpriseMeComponent copy";
+import SearchComponent from "../components/SearchComponent";
+import { Header } from "semantic-ui-react";
 
 export default function HomePage() {
   return (
     <>
-      <header>Fancy a Drink today</header>
-      {/* <main>
-        <div class="flex">
-          <DisplayComponent title="Title" />
-          <DisplayComponent title="Title1" />
-          <DisplayComponent title="Title2" />
-          <DisplayComponent title="Title3" />
-        </div>
-      </main> */}
-
-      {/* <SurpriseMeComponentTest /> */}
+      <div class="background">
+        {/* <Header as="h1">Welcome to Drink API</Header> */}
+        <main>
+          <SearchComponent />
+        </main>
+      </div>
     </>
   );
 }

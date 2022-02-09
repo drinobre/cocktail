@@ -13,8 +13,10 @@ code {
 }
 
 .search-group {
-  background-color: aqua;
-  position: center;
+  /* background-color: aqua; */
+  display: flex;
+  -ms-flex-align: center;
+  padding-bottom: 20px;
 }
 
 /* 
@@ -26,15 +28,16 @@ code {
 
 footer {
   color: lightgray;
-  background: gray;
   display: flex;
   -ms-flex-align: center;
+  background-color: #3f37c9;
 }
 
 nav {
   display: flex;
   -ms-flex-align: center;
   justify-content: space-between;
+  background-color: #f6f8f9;
 }
 
 .navbar-right {
@@ -61,12 +64,12 @@ nav {
   
 } */
 
-.img_size_medium {
+/* .img_size_medium {
   border-radius: 50%;
   width: 100%;
   height: 20rem;
   width: auto;
-}
+} */
 
 /* button {
   display: center;
@@ -76,7 +79,7 @@ nav {
 .multiple-cards {
   display: flex;
   flex-direction: wrap;
-  background-color: red;
+  /* background-color: red; */
   flex-direction: column; /* how the items inside each card will be displayed */
   border: black;
   /* padding-bottom: 10px 10px 10px 10px; */
@@ -106,7 +109,7 @@ nav {
   /* flex: 1 1 25%; */
   /* width: auto;
   height: auto; */
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
 }
 
 /* .multiple-card {
@@ -127,4 +130,19 @@ h2 {
 
 h1 {
   text-align: center;
+}
+
+.background {
+  background-color: #f6f8f9;
+}
+
+.direction-center {
+  color: lightgray;
+  display: flex;
+  -ms-flex-align: center;
+  background-color: #3f37c9;
+}
+
+Header {
+  color: #3f37c9;
 }

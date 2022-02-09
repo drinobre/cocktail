@@ -1,5 +1,6 @@
 import useFetch from "../../hooks/useFetch";
 import DisplayComponent from "../DisplayComponent";
+import CardExampleCardProps from "../DisplayComponent";
 
 export default function SearchResults({ newResults, input }) {
   const url = `https://thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
@@ -27,16 +28,25 @@ export default function SearchResults({ newResults, input }) {
           strDrink,
           strDrinkThumb,
           strInstructions,
+          strAlcoholic,
         }) {
           return (
             <div class="multiple-cards">
-              <DisplayComponent
+              <CardExampleCardProps
+                key={idDrink}
+                title={strDrink}
+                image={strDrinkThumb}
+                alt="drink"
+                alcoholic={strAlcoholic}
+              />
+
+              {/* <DisplayComponent
                 key={idDrink}
                 title={strDrink}
                 image={strDrinkThumb}
                 alt="drink"
                 // //description={strInstructions}
-              />
+              /> */}
               {/* <button>Read more</button> */}
             </div>
           );

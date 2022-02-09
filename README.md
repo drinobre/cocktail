@@ -44,17 +44,21 @@ I will be using React to build the APP.
 
 # Use of Semantic UI React
 
-- install the [Semantic Ui React](https://react.semantic-ui.com/usage/) > npm install semantic-ui-react semantic-ui-css
+- install the [Semantic Ui React](https://react.semantic-ui.com/usage/) > npm install semantic-ui-react semantic-ui-css;
+- add import "semantic-ui-css/semantic.min.css" on the main index.js file;
 
 ## Learnings / Practices
 
 - Use of the tag <Headers> when creating pages;
 - Create custom Hook useFetch;
 - Use of Routes (multiple pages APP)
+-
 
 ## Challenges
 
 - How to save an image on README file (format SVG or add the image on File)
+- When maping the array make sure to add the data fetched and the name of the const. For example data.drinks.map()
+- Bug on semantic UI - https://github.com/Semantic-Org/Semantic-UI-React/issues/4287
 
 ## References
 
