@@ -13,10 +13,9 @@ code {
 }
 
 .search-group {
-  /* background-color: aqua; */
   display: flex;
-  -ms-flex-align: center;
-  padding-bottom: 20px;
+  -ms-flex-align: stretch;
+  padding: 10% 0px 5% 5px;
 }
 
 /* 
@@ -29,21 +28,39 @@ code {
 footer {
   color: lightgray;
   display: flex;
-  -ms-flex-align: center;
+  -ms-flex-align: flex-end;
   background-color: #3f37c9;
 }
 
 nav {
   display: flex;
-  -ms-flex-align: center;
   justify-content: space-between;
+  align-items: center;
   background-color: #f6f8f9;
+  width: 100%;
+  height: 100px;
+}
+
+.navbar-left {
+  display: inherit;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin: 5% 5% 5% 0; */
+  color: #f2f2f2;
+  font-size: 17px;
 }
 
 .navbar-right {
   display: flex;
-  -ms-flex-align: right;
-  /* justify-content: space-between; */
+  justify-content: flex-end;
+  align-items: center;
+  color: #f2f2f2;
+  font-size: 17px;
+  color: rgb(63, 55, 201);
+}
+
+.navbar-link {
+  margin-right: 1rem;
 }
 
 .single-card {
@@ -105,24 +122,11 @@ nav {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
-  /* flex: 1 1 25%; */
-  /* width: auto;
-  height: auto; */
-  /* background-color: chartreuse; */
-}
-
-/* .multiple-card {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5px;
-  width: 100%;
+  padding: 0px 20px 20px 20px;
+  width: auto;
   height: auto;
-  background-color: brown;
-  border: black;
-} */
+  background-image: linear-gradient(rgb(254, 254, 255), rgb(244, 245, 247));
+}
 
 h2 {
   text-align: center;
@@ -130,10 +134,17 @@ h2 {
 
 h1 {
   text-align: center;
+  color: #3f37c9;
+}
+
+h3 {
+  text-align: center;
+  margin-right: 30%;
 }
 
 .background {
-  background-color: #f6f8f9;
+  /* background-color: #f6f8f9; */
+  text-align: center;
 }
 
 .direction-center {
@@ -143,6 +154,69 @@ h1 {
   background-color: #3f37c9;
 }
 
+.display-middle {
+  display: flex;
+  -ms-flex-align: center;
+  padding: 2% 15% 0% 15%;
+}
+
 Header {
   color: #3f37c9;
+}
+
+h3 {
+  padding: 0 10% 0% 10%;
+}
+
+/* Source: https://wweb.dev/resources/css-separator-generator/    */
+.container {
+  position: relative;
+  background: rgb(244, 245, 247);
+  height: 50vh;
+}
+
+.wave {
+  position: absolute;
+  height: 78px;
+  width: 100%;
+  background: rgb(244, 245, 247);
+  bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  right: -1.5%;
+  top: 60%;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: rgb(244, 245, 247);
+  left: -1.5%;
+  top: 40%;
+}
+
+Button {
+  background-color: #3f37c9;
+  text-align: center;
+}
+
+.paddings {
+  padding-top: 10%;
+}
+
+.display-button {
+  display: flex;
+  -ms-flex-align: center;
+  background-color: #3f37c9;
 }

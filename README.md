@@ -63,3 +63,4 @@ I will be using React to build the APP.
 ## References
 
 - https://beta.reactjs.org/
+- https://wweb.dev/resources/css-separator-generator/

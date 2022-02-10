@@ -20,7 +20,10 @@ export default function SearchComponent() {
   return (
     <>
       <div className="search-group">
-        <Input onChange={handleChange} placeholder="Search..." />
+        <Input
+          onChange={handleChange}
+          placeholder="Search by Cocktail name..."
+        />
         {/* <input onChange={handleChange}></input> */}
         <Button onClick={handleClick}>Search</Button>
         {/* <button onClick={handleClick}>Search</button> */}

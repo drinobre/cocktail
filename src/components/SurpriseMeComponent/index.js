@@ -23,49 +23,51 @@ export default function SurpriseMeComponent() {
   // }
 
   return (
-    <>
-      <h2>Drink name: {data.drinks[0].strDrink}</h2>
-      <div class="single-card">
-        <div>
-          <img
-            class="img_size_medium"
-            src={data.drinks[0].strDrinkThumb}
-            alt="Cocktail"
-          />
-        </div>
-        <div class="grid-2-container">
-          <h3>Ingredients</h3>
-          <ul>
-            <li>
-              {data.drinks[0].strMeasure1}
-              {"-"}
-              {data.drinks[0].strIngredient1}
-            </li>
-            <li>
-              {data.drinks[0].strMeasure2}
-              {"-"}
-              {data.drinks[0].strIngredient2}
-            </li>
-            <li>
-              {data.drinks[0].strMeasure3}
-              {"-"}
-              {data.drinks[0].strIngredient3}
-            </li>
-            <li>
-              {data.drinks[0].strMeasure4}
-              {"-"}
-              {data.drinks[0].strIngredient4}
-            </li>
-            <li>
-              {data.drinks[0].strMeasure5}
-              {"-"}
-              {data.drinks[0].strIngredient5}
-            </li>
-          </ul>
-          <h3>How to prepare</h3>
-          <p>{data.drinks[0].strInstructions}</p>
+    <div>
+      <div>
+        <h2 class="paddings">Drink name: {data.drinks[0].strDrink}</h2>
+        <div class="single-card">
+          <div>
+            <img
+              class="img_size_medium"
+              src={data.drinks[0].strDrinkThumb}
+              alt="Cocktail"
+            />
+          </div>
+          <div class="grid-2-container">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>
+                {data.drinks[0].strMeasure1}
+                {"-"}
+                {data.drinks[0].strIngredient1}
+              </li>
+              <li>
+                {data.drinks[0].strMeasure2}
+                {"-"}
+                {data.drinks[0].strIngredient2}
+              </li>
+              <li>
+                {data.drinks[0].strMeasure3}
+                {"-"}
+                {data.drinks[0].strIngredient3}
+              </li>
+              <li>
+                {data.drinks[0].strMeasure4}
+                {"-"}
+                {data.drinks[0].strIngredient4}
+              </li>
+              <li>
+                {data.drinks[0].strMeasure5}
+                {"-"}
+                {data.drinks[0].strIngredient5}
+              </li>
+            </ul>
+            <h3>How to prepare</h3>
+            <p>{data.drinks[0].strInstructions}</p>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
