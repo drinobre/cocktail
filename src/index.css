@@ -220,3 +220,7 @@ Button {
   -ms-flex-align: center;
   background-color: #3f37c9;
 }
+
+ul {
+  list-style: none;
+}

@@ -19,3 +19,18 @@
 // );
 
 // export default CardExampleCardProps;
+
+// function Portifolio() {
+//   return (
+//     <>
+//       <h1>Welcome to my Portifolio</h1>
+//       <h2>
+//         My name is Adriana, I'm a brazilian with Italian background who lives in
+//         UK.
+//       </h2>
+//       <p> I'm ex-Project Manager, Business Analyst and looking to become a full stack developer</p>
+//     </>
+//   );
+// }
+
+// export default App;

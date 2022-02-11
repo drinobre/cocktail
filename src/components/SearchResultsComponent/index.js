@@ -1,5 +1,4 @@
 import useFetch from "../../hooks/useFetch";
-import DisplayComponent from "../DisplayComponent";
 import CardExampleCardProps from "../DisplayComponent";
 
 export default function SearchResults({ newResults, input }) {

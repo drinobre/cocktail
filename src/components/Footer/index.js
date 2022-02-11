@@ -5,7 +5,7 @@ export default function Footer({ copyright }) {
   return (
     <footer>
       {copyright}
-      {/* <ButtonSocial /> */}
+      <ButtonSocial />
     </footer>
   );
 }

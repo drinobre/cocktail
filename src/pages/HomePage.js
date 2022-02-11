@@ -1,6 +1,5 @@
 import React from "react";
 import SearchComponent from "../components/SearchComponent";
-import { Button, Input } from "semantic-ui-react";
 
 export default function HomePage() {
   return (
