@@ -6,8 +6,11 @@ import { Button, Icon } from "semantic-ui-react";
 
 const ButtonSocial = () => (
   <div>
-    <Button color="facebook">
-      <Icon name="facebook" /> Facebook
+    <Button color="linkedin">
+      <Icon name="linkedin" /> Linkedin
+    </Button>
+    <Button color="github">
+      <Icon name="github" /> Github
     </Button>
   </div>
 );

@@ -24,9 +24,7 @@ export default function SearchComponent() {
           onChange={handleChange}
           placeholder="Search by Cocktail name..."
         />
-        {/* <input onChange={handleChange}></input> */}
         <Button onClick={handleClick}>Search</Button>
-        {/* <button onClick={handleClick}>Search</button> */}
       </div>
       <div>
         <SearchResults input={apiSearch} />

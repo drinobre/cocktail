@@ -57,6 +57,26 @@ export default function SurpriseMeComponent() {
                 {data.drinks[0].strMeasure5}
                 {data.drinks[0].strIngredient5}
               </li>
+              <li>
+                {data.drinks[0].strMeasure6}
+                {data.drinks[0].strIngredient6}
+              </li>
+              <li>
+                {data.drinks[0].strMeasure7}
+                {data.drinks[0].strIngredient7}
+              </li>
+              <li>
+                {data.drinks[0].strMeasure8}
+                {data.drinks[0].strIngredient8}
+              </li>
+              <li>
+                {data.drinks[0].strMeasure9}
+                {data.drinks[0].strIngredient9}
+              </li>
+              <li>
+                {data.drinks[0].strMeasure10}
+                {data.drinks[0].strIngredient10}
+              </li>
             </ul>
             <h3>How to prepare</h3>
             <p>{data.drinks[0].strInstructions}</p>

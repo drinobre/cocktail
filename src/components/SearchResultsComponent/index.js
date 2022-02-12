@@ -38,15 +38,6 @@ export default function SearchResults({ newResults, input }) {
                 alt="drink"
                 alcoholic={strAlcoholic}
               />
-
-              {/* <DisplayComponent
-                key={idDrink}
-                title={strDrink}
-                image={strDrinkThumb}
-                alt="drink"
-                // //description={strInstructions}
-              /> */}
-              {/* <button>Read more</button> */}
             </div>
           );
         })}
