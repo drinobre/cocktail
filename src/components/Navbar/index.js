@@ -9,10 +9,10 @@ export default function NavBar() {
         </div> */}
         <div class="navbar-right">
           <span class="navbar-link">
-            <Link to="/">Home</Link>
+            <Link to="cocktail/">Home</Link>
           </span>
           <span class="navbar-link">
-            <Link to="/surprise_me">Surprise me</Link>
+            <Link to="cocktail/surprise_me">Surprise me</Link>
           </span>
           {/* <span class="navbar-link">
             <Link to="/search_drink">Search drink</Link>

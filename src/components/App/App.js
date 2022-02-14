@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/surprise_me" element={<SurpriseMePage />}></Route>
+        <Route path="cocktail/" element={<HomePage />} />
+        <Route path="cocktail/surprise_me" element={<SurpriseMePage />}></Route>
       </Routes>
       {/* <header className="App-header">Fancy having a Cocktail today?</header> */}
       <Footer copyright={"Created and designed by Adriana Nobre Lawrence"} />
