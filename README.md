@@ -63,6 +63,7 @@ I will be using React to build the APP.
 - How to save an image on README file (format SVG or add the image on File)
 - When maping the array make sure to add the data fetched and the name of the const. For example data.drinks.map()
 - Bug on semantic UI - https://github.com/Semantic-Org/Semantic-UI-React/issues/4287
+- Modals
 
 ## References
 

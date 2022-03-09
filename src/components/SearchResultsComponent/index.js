@@ -31,7 +31,12 @@ export default function SearchResults({ newResults, input }) {
           strDrinkThumb,
           strInstructions,
           strAlcoholic,
+          strMeasure1,
+          strMeasure2,
+          strMeasure3,
           strIngredient1,
+          strIngredient2,
+          strIngredient3,
         }) {
           return (
             <>
@@ -52,7 +57,12 @@ export default function SearchResults({ newResults, input }) {
                   image={strDrinkThumb}
                   alt="drink"
                   alcoholic={strAlcoholic}
-                  strIngredient1={strIngredient1}
+                  measure1={strMeasure1}
+                  ingredient1={strIngredient1}
+                  measure2={strMeasure2}
+                  ingredient2={strIngredient2}
+                  measure3={strMeasure3}
+                  ingredient3={strIngredient3}
                 />
               </div>
             </>

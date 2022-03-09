@@ -21,13 +21,19 @@ export default function MyVerticallyCenteredModal(props) {
       </Modal.Header>
       <Modal.Body>
         <h3>Ingredients</h3>
-        <p>{props.ingredients1}</p>
-        <p>{props.ingredients2}</p>
-        <p>{props.ingredients3}</p>
-        <p>{props.ingredients4}</p>
-        <p>{props.ingredients5}</p>
-        <h3>How to prepare</h3>
-        <p>{props.instructions}</p>
+        <ul>
+          <li>
+            {props.measure1} {props.ingredients1}
+          </li>
+          <li>
+            {props.measure2} {props.ingredients2}
+          </li>
+          <li>
+            {props.measure3} {props.ingredients3}
+          </li>
+          <h3>How to prepare</h3>
+          <p>{props.instructions}</p>
+        </ul>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
