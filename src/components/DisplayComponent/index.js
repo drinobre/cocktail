@@ -1,41 +1,41 @@
 import React from "react";
 import { Card, Button } from "semantic-ui-react";
 import ModalComponent from "../ModalElement";
+import MyVerticallyCenteredModal from "../ModalElement";
+import { useState } from "react";
 
 // const extra = (
 //   // <ModalComponent class="direction-center">Read more</ModalComponent>
 // );
 
-const CardExampleCardProps = ({
+export default function CardExampleCardProps({
+  idDrink,
+  strDrink,
+  strDrinkThumb,
+  strInstructions,
+  strAlcoholic,
+  strIngredient1,
   title,
-  image,
   alcoholic,
+  image,
   alt,
-  description,
-}) => (
-  <>
-    <Card
-      header={title}
-      image={image}
-      //icon="cocktail"
-      meta={alcoholic}
-      description={description}
-      // extra={extra}
-    />
-  </>
-);
-
-export default CardExampleCardProps;
-
-// export default function DisplayComponent({ title, image, alt, description }) {
-//   return (
-//     <>
-//       <h2>{title}</h2>
-//       <img class="img_size_medium" src={image} alt={alt} />
-//       <p>{description}</p>
-//       <span>
-//         <button>Read more</button>
-//       </span>
-//     </>
-//   );
-// }
+}) {
+  const [modalShow, setModalShow] = useState(false);
+  return (
+    <>
+      <div key={idDrink}>
+        <h3>{title}</h3>
+        <img href={image} alt={alt} />
+        <p>{alcoholic}</p>
+        <Button variant="primary" onClick={() => setModalShow(true)}>
+          Read more
+        </Button>
+        <MyVerticallyCenteredModal
+          ingredients1={strIngredient1}
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+      </div>
+    </>
+  );
+}

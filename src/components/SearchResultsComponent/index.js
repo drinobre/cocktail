@@ -8,7 +8,6 @@ export default function SearchResults({ newResults, input }) {
   const url = `https://thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
 
   const { data, error } = useFetch(url);
-  const [modalShow, setModalShow] = useState(false);
 
   if (error) {
     return <p>Error!</p>;
@@ -35,24 +34,28 @@ export default function SearchResults({ newResults, input }) {
           strIngredient1,
         }) {
           return (
-            <div class="multiple-cards">
-              <CardExampleCardProps
+            <>
+              <div class="multiple-cards">
+                {/* <CardExampleCardProps
                 key={idDrink}
                 title={strDrink}
                 image={strDrinkThumb}
                 alt="drink"
                 alcoholic={strAlcoholic}
               />
-              <MyVerticallyCenteredModal
-                title={strDrink}
-                ingredients1={strIngredient1}
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-              />
               <Button variant="primary" onClick={() => setModalShow(true)}>
                 Read more
-              </Button>
-            </div>
+              </Button> */}
+                <CardExampleCardProps
+                  key={idDrink}
+                  title={strDrink}
+                  image={strDrinkThumb}
+                  alt="drink"
+                  alcoholic={strAlcoholic}
+                  strIngredient1={strIngredient1}
+                />
+              </div>
+            </>
           );
         })}
       </section>
