@@ -1,10 +1,14 @@
 import useFetch from "../../hooks/useFetch";
 import CardExampleCardProps from "../DisplayComponent";
+import { useState } from "react";
+import MyVerticallyCenteredModal from "../ModalElement";
+import Button from "react-bootstrap/Button";
 
 export default function SearchResults({ newResults, input }) {
   const url = `https://thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
 
   const { data, error } = useFetch(url);
+  const [modalShow, setModalShow] = useState(false);
 
   if (error) {
     return <p>Error!</p>;
@@ -28,6 +32,7 @@ export default function SearchResults({ newResults, input }) {
           strDrinkThumb,
           strInstructions,
           strAlcoholic,
+          strIngredient1,
         }) {
           return (
             <div class="multiple-cards">
@@ -38,6 +43,15 @@ export default function SearchResults({ newResults, input }) {
                 alt="drink"
                 alcoholic={strAlcoholic}
               />
+              <MyVerticallyCenteredModal
+                title={strDrink}
+                ingredients1={strIngredient1}
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+              <Button variant="primary" onClick={() => setModalShow(true)}>
+                Read more
+              </Button>
             </div>
           );
         })}
