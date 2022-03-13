@@ -2,8 +2,6 @@
 
 Create a single page APP where users can search for a specific drink from an API and the result will be display on the screen.
 
-<!-- <img alt="plan" src="/cocktail_api/src/images/API_MVP.png" /> // Not working -->
-
 ## Technical requirements
 
 I will be using React to build the APP.
