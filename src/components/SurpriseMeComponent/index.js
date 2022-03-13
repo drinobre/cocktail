@@ -24,18 +24,25 @@ export default function SurpriseMeComponent() {
 
   return (
     <div>
-      <div>
-        <h2 class="paddings">Drink name: {data.drinks[0].strDrink}</h2>
+      <div class="card-surprise-me">
+        <div>
+          <h1 class="paddings">{data.drinks[0].strDrink}</h1>
+        </div>
         <div class="single-card">
-          <div>
+          <div class="image-card">
             <img
               class="img_size_medium"
               src={data.drinks[0].strDrinkThumb}
               alt="Cocktail"
             />
           </div>
-          <div class="grid-2-container">
-            <h3>Ingredients</h3>
+          <div class="description-card">
+            {/* <img
+              class="img_size_medium"
+              src={data.drinks[0].strDrinkThumb}
+              alt="Cocktail"
+            /> */}
+            <h4>Ingredients</h4>
             <ul>
               <li>
                 {data.drinks[0].strMeasure1}
@@ -78,7 +85,7 @@ export default function SurpriseMeComponent() {
                 {data.drinks[0].strIngredient10}
               </li>
             </ul>
-            <h3>How to prepare</h3>
+            <h4>How to prepare</h4>
             <p>{data.drinks[0].strInstructions}</p>
           </div>
         </div>
