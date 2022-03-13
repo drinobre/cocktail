@@ -40,12 +40,15 @@ export default function CardExampleCardProps({
   return (
     <>
       <div key={idDrink}>
-        <h3>{title}</h3>
-        <img href={image} alt={alt} />
-        <p>{alcoholic}</p>
+        <Card>
+          <h3>{title}</h3>
+          <p>{alcoholic}</p>
+          <img src={image} alt={alt} />
+        </Card>
         <Button variant="primary" onClick={() => setModalShow(true)}>
           Read more
         </Button>
+
         <MyVerticallyCenteredModal
           title={title}
           measure1={measure1}

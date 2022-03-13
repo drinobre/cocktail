@@ -24,10 +24,10 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - App
   -- Search
   -- Display
-  
+
 #### Third-party Libraries
 
-- [gh-pages](https://www.npmjs.com/package/gh-pageshttps://www.npmjs.com/package/gh-pages): use to deploy the cocktail page on Github. 
+- [gh-pages](https://www.npmjs.com/package/gh-pageshttps://www.npmjs.com/package/gh-pages): use to deploy the cocktail page on Github.
 - bootstrap: use to create the modals on the homepage.
 - semantic-ui: use to style the components.
 
@@ -40,16 +40,15 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - Create the folder Components > App and add the app files automatically created by React
 - Change the file location for APP and image in the import
 - Test the APP (npm start)
- </details>
-  
+</details>
+
 <details>
 <summary>Creating components</summary>
 
 - Create separate folders for each component, which will be rendered on the main APP (for example, buttons, display ...)
 - Create the index.js file into each component, which they will handle a function containing a return in JSX format.
 - `Note: the return must be inside a <div> or <> tag`.
- </details>
-  
+</details>
 
 <details>
 <summary>Creating custom Hook</summary>
@@ -74,33 +73,31 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - install the [Semantic Ui React](https://react.semantic-ui.com/usage/) > npm install semantic-ui-react semantic-ui-css;
 - add import "semantic-ui-css/semantic.min.css" on the main index.js file;
 
-# Use of Modal
+</details>
+
+<details>
+<summary>Use of Modal</summary>
 
 - install [React Bootstrap](https://react-bootstrap.github.io/components/modal/) > npm install react-bootstrap bootstrap@5.1.3;
-- Note: make sure to add the bootstrap/dist/css/bootstrap.min.css for styling.
+- Note: make sure to add the [bootstrap/dist/css/bootstrap.min.css](https://react-bootstrap.github.io/getting-started/introduction/#css) for styling.
 
 </details>
   
- 
 ## Learnings and Challenges
-
 - Use of the tag <Headers> when creating pages;
-
-## Challenges
-
 - Create custom Hook to Fetch data;
 - Use of Routes (multiple pages APP);
 - How to use Modal;
 - How to save an image on README file (format SVG or add the image on File);
 - When mapping the array make sure to add the data fetched and the name of the const. For example, data.drinks.map();
-- Import the semantic UI on the main index.js file; 
+- Import the semantic UI on the main index.js file;
 - [Bug on semantic UI](https://github.com/Semantic-Org/Semantic-UI-React/issues/4287)
 - Implement modals
   -- The documentation doesn't mentioned about what you have to import for the css to work. Therefore, I didn't import 'bootstrap/dist/css/bootstrap.min.css' for the style and the content was rendered on the bottom of the page without any style.
 
 ## References
 
-  - https://thecocktaildb.com/api.php
+- https://thecocktaildb.com/api.php
 - https://beta.reactjs.org/
 - https://wweb.dev/resources/css-separator-generator/
 - https://www.npmjs.com/package/gh-pages
