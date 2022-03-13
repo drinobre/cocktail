@@ -1,66 +1,95 @@
+# Cocktail API
+
 ## Objective
 
 Create a single page APP where users can search for a specific drink from an API and the result will be display on the screen.
 
+You can access the website at https://drinobre.github.io/cocktail/
+
 <!-- <img alt="plan" src="/cocktail_api/src/images/API_MVP.png" /> // Not working -->
+
+## Functionalities
+
+Users will be able to interact with the API by:
+
+- Searching by drink name
+- Select a random cocktail using "Surprise me"
 
 ## Technical requirements
 
-I will be using React to build the APP.
+For this project, I will be using React.js to fetch the [Cocktail API](https://thecocktaildb.com/api.php).
 
-## Components Tree
+#### Components Tree
 
 - App
   -- Search
   -- Display
+  
+#### Third-party Libraries
+
+- [gh-pages](https://www.npmjs.com/package/gh-pageshttps://www.npmjs.com/package/gh-pages): use to deploy the cocktail page on Github. 
+- bootstrap: use to create the modals on the homepage.
+- semantic-ui: use to style the components.
 
 ## Implementation Plan
 
-### Initiate React and Structure Folder convention
+<details>
+<summary>Initiate React and Structure Folder convention</summary>
 
 - Init React (npx create-react-app <react-app-name>)
 - Create the folder Components > App and add the app files automatically created by React
 - Change the file location for APP and image in the import
 - Test the APP (npm start)
+ </details>
+  
+<details>
+<summary>Creating components</summary>
 
-### Creating components
-
-- Create separate folders for each component, which will be rendered on the main APP (for example, buttons, display)
+- Create separate folders for each component, which will be rendered on the main APP (for example, buttons, display ...)
 - Create the index.js file into each component, which they will handle a function containing a return in JSX format.
-  Note: the return must be inside a <div> or <> tag
+- `Note: the return must be inside a <div> or <> tag`.
+ </details>
+  
 
-# Creating custom Hook
-
+<details>
+<summary>Creating custom Hook</summary>
+  
 - Create a folder called Hook to add the custom hooks.
-- It's best practice to call the custom hook use<i>HookName</i>. So. the follow the same rule as useState, useReducer (...)
-
-# Link pages using <Link> and <Routes>
-
+- It's best practice to call the custom hook use<i>HookName</i>. in order to follow the same rule as useState, useReducer (...)
+</details>
+  
+<details>
+<summary>Link pages using Link and Routes</summary>  
+  
 - Install the [React Router](https://reactrouter.com/docs/en/v6/getting-started/installation) as a dependence > module npm install react-router-dom@6
 - index.js:
   import { BrowserRouter } from "react-router-dom" and wrap up teh app on <BrowserRouter> instead of <React.StrictMode>. Otherwise, the App wouldn't render using the Routes and you can use on the APP file.
 - app.js:
   import Link, Routes and Route from react-router-dom;
+</details>
 
-# Use of Semantic UI React
-
+<details>
+<summary>Use of Semantic UI React</summary>  
+  
 - install the [Semantic Ui React](https://react.semantic-ui.com/usage/) > npm install semantic-ui-react semantic-ui-css;
 - add import "semantic-ui-css/semantic.min.css" on the main index.js file;
-
-## Learnings / Practices
+</details>
+  
+ 
+## Learnings and Challenges
 
 - Use of the tag <Headers> when creating pages;
-- Create custom Hook useFetch;
-- Use of Routes (multiple pages APP)
--
-
-## Challenges
-
-- How to save an image on README file (format SVG or add the image on File)
-- When maping the array make sure to add the data fetched and the name of the const. For example data.drinks.map()
-- Bug on semantic UI - https://github.com/Semantic-Org/Semantic-UI-React/issues/4287
+- Create custom Hook to Fetch data;
+- Use of Routes (multiple pages APP);
+- How to use Modal;
+- How to save an image on README file (format SVG or add the image on File);
+- When maping the array make sure to add the data fetched and the name of the const. For example, data.drinks.map();
+- Import the semantic UI on the main index.js file; 
+- [Bug on semantic UI](https://github.com/Semantic-Org/Semantic-UI-React/issues/4287)
 
 ## References
 
+- https://thecocktaildb.com/api.php
 - https://beta.reactjs.org/
 - https://wweb.dev/resources/css-separator-generator/
+- https://www.npmjs.com/package/gh-pages
