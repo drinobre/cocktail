@@ -48,6 +48,7 @@ I will be using React to build the APP.
 # Use of Modal
 
 - install [React Bootstrap](https://react-bootstrap.github.io/components/modal/) > npm install react-bootstrap bootstrap@5.1.3;
+- Note: make sure to add the bootstrap/dist/css/bootstrap.min.css for styling.
 
 ## Learnings / Practices
 
@@ -59,8 +60,10 @@ I will be using React to build the APP.
 ## Challenges
 
 - How to save an image on README file (format SVG or add the image on File)
-- When maping the array make sure to add the data fetched and the name of the const. For example data.drinks.map()
+- When mapping the array make sure to add the data fetched and the name of the const. For example data.drinks.map()
 - Bug on semantic UI - https://github.com/Semantic-Org/Semantic-UI-React/issues/4287
+- Implement modals
+  -- The documentation doesn't mentioned about what you have to import for the css to work. Therefore, I didn't import 'bootstrap/dist/css/bootstrap.min.css' for the style and the content was rendered on the bottom of the page without any style.
 
 ## References
 
