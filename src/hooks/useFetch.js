@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 // export default function useFetch(url) {
 //   // let url = `https://thecocktaildb.com/api/json/v1/1/search.php?s=${input}`; // url to be fetch
+// think about the url state
 
 //   const [apiData, setApiData] = useState("");
 //   const [error, setError] = useState(null);
