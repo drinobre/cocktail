@@ -4,7 +4,7 @@ import SurpriseMeComponent from "../components/SurpriseMeComponent";
 export default function SurpriseMePage() {
   return (
     <>
-      <section class="container">
+      {/* <section class="container">
         <div class="wave"></div>
         <div>
           <h1>Surprise me!</h1>
@@ -12,7 +12,7 @@ export default function SurpriseMePage() {
             <h2> There is always a new drink to try.</h2>
           </div>
         </div>
-      </section>
+      </section> */}
       <SurpriseMeComponent />
     </>
   );

@@ -1,7 +1,10 @@
 import React from "react";
 import { Card, Button } from "semantic-ui-react";
+import ModalComponent from "../ModalElement";
 
-const extra = <Button class="direction-center">Read more</Button>;
+// const extra = (
+//   // <ModalComponent class="direction-center">Read more</ModalComponent>
+// );
 
 const CardExampleCardProps = ({
   title,
@@ -17,7 +20,7 @@ const CardExampleCardProps = ({
       //icon="cocktail"
       meta={alcoholic}
       description={description}
-      extra={extra}
+      // extra={extra}
     />
   </>
 );

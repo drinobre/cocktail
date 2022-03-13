@@ -21,6 +21,7 @@ export default function SearchComponent() {
     <>
       <div className="search-group">
         <Input
+          className="input"
           onChange={handleChange}
           placeholder="Search by Cocktail name..."
         />

@@ -10,11 +10,11 @@ export default function HomePage() {
           <div>
             <h1>Welcome to Drink API</h1>
             <div class="display-middle">
-              <h2>
+              <h3>
                 The Drink API was created to help users to find how to prepare
                 famous drinks. It's very simple to find the ingredients,
                 measurements and how to prepare.
-              </h2>
+              </h3>
             </div>
             {/* <span>
               <Button class="display-button">Read more</Button>

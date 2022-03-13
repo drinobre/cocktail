@@ -45,6 +45,10 @@ I will be using React to build the APP.
 - install the [Semantic Ui React](https://react.semantic-ui.com/usage/) > npm install semantic-ui-react semantic-ui-css;
 - add import "semantic-ui-css/semantic.min.css" on the main index.js file;
 
+# Use of Modal
+
+- install [React Bootstrap](https://react-bootstrap.github.io/components/modal/) > npm install react-bootstrap bootstrap@5.1.3;
+
 ## Learnings / Practices
 
 - Use of the tag <Headers> when creating pages;
