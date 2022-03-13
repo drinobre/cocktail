@@ -24,7 +24,7 @@ export default function SearchResults({ newResults, input }) {
   return (
     <>
       <section class="container-multiple-cards">
-        {/* map the fetch data with array name "drinks" and add the propreties name from the object */}
+        {/* map the fetch data with array name "drinks" and add the propety name from the object */}
         {data.drinks.map(function ({
           idDrink,
           strDrink,
