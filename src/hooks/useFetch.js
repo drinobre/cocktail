@@ -5,6 +5,10 @@ export default function useFetch(url) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    if (!url) {
+      return;
+    }
+
     async function fetchApi() {
       try {
         const response = await fetch(`${url}`);
@@ -22,7 +26,7 @@ export default function useFetch(url) {
     }
 
     fetchApi();
-  }, [url, data]);
+  }, [url]);
 
   return { data, error };
 }

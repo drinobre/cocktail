@@ -14,7 +14,9 @@ function App() {
         <Route path="cocktail/surprise_me" element={<SurpriseMePage />}></Route>
       </Routes>
       {/* <header className="App-header">Fancy having a Cocktail today?</header> */}
-      <Footer copyright={"Created and designed by Adriana Nobre Lawrence"} />
+      <footer>
+        <Footer copyright={"Created and designed by Adriana Nobre Lawrence"} />
+      </footer>
     </div>
   );
 }

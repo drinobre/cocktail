@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import useFetch from "../../hooks/useFetch";
 
 export default function SurpriseMeComponent() {
@@ -5,13 +6,19 @@ export default function SurpriseMeComponent() {
 
   const { data, error } = useFetch(url);
 
-  if (error) {
-    return <p>Error!</p>;
-  }
+  // useEffect(() => {
+  //   // Provide users a sense of status
+  //   if (!data) {
+  //     return <p>Loading ...</p>;
+  //   }
+  // }, []);
 
-  // Provide users a sense of status
   if (!data) {
     return <p>Loading ...</p>;
+  }
+
+  if (error) {
+    return <p>Error!</p>;
   }
 
   // function checkNumber(number) {
@@ -24,21 +31,21 @@ export default function SurpriseMeComponent() {
 
   return (
     <div>
-      <div class="card-surprise-me">
+      <div className="card-surprise-me">
         <div>
-          <h1 class="paddings">{data.drinks[0].strDrink}</h1>
+          <h1 className="paddings">{data.drinks[0].strDrink}</h1>
         </div>
-        <div class="single-card">
-          <div class="image-card">
+        <div className="single-card">
+          <div className="image-card">
             <img
-              class="img_size_medium"
+              className="img_size_medium"
               src={data.drinks[0].strDrinkThumb}
               alt="Cocktail"
             />
           </div>
-          <div class="description-card">
+          <div className="description-card">
             {/* <img
-              class="img_size_medium"
+              className="img_size_medium"
               src={data.drinks[0].strDrinkThumb}
               alt="Cocktail"
             /> */}

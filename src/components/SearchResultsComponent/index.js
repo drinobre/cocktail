@@ -23,7 +23,7 @@ export default function SearchResults({ newResults, input }) {
 
   return (
     <>
-      <section class="container-multiple-cards">
+      <section className="container-multiple-cards">
         {/* map the fetch data with array name "drinks" and add the propety name from the object */}
         {data.drinks.map(function ({
           idDrink,
@@ -54,7 +54,7 @@ export default function SearchResults({ newResults, input }) {
         }) {
           return (
             <>
-              <div class="multiple-cards">
+              <div className="multiple-cards">
                 <CardExampleCardProps
                   key={idDrink}
                   title={strDrink}
