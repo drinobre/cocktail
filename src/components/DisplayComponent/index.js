@@ -8,70 +8,46 @@ import { useState } from "react";
 //   // <ModalComponent class="direction-center">Read more</ModalComponent>
 // );
 
-export default function CardExampleCardProps({
-  idDrink,
-  measure1,
-  measure2,
-  measure3,
-  measure4,
-  measure5,
-  measure6,
-  measure7,
-  measure8,
-  measure9,
-  measure10,
-  ingredient1,
-  ingredient2,
-  ingredient3,
-  ingredient4,
-  ingredient5,
-  ingredient6,
-  ingredient7,
-  ingredient8,
-  ingredient9,
-  ingredient10,
-  instructions,
-  title,
-  alcoholic,
-  image,
-  alt,
-}) {
+export default function CardExampleCardProps(drink) {
   const [modalShow, setModalShow] = useState(false);
+
+  console.log(drink);
+
   return (
     <>
-      <div key={idDrink}>
+      <div key={drink.idDrink}>
         <Card>
-          <h3>{title}</h3>
-          <p>{alcoholic}</p>
-          <img src={image} alt={alt} />
+          <h3>{drink.title}</h3>
+          <p>{drink.alcoholic}</p>
+          <img src={drink.image} alt={drink.alt} />
         </Card>
         <Button variant="primary" onClick={() => setModalShow(true)}>
           Read more
         </Button>
 
         <MyVerticallyCenteredModal
-          title={title}
-          measure1={measure1}
-          ingredients1={ingredient1}
-          measure2={measure2}
-          ingredients2={ingredient2}
-          measure3={measure3}
-          ingredients3={ingredient3}
-          measure4={measure4}
-          ingredients4={ingredient4}
-          measure5={measure5}
-          ingredients5={ingredient5}
-          measure6={measure6}
-          ingredients6={ingredient6}
-          measure7={measure7}
-          ingredients7={ingredient7}
-          measure8={measure8}
-          ingredients8={ingredient8}
-          measure9={measure9}
-          ingredients9={ingredient9}
-          measure10={measure10}
-          ingredients10={ingredient10}
-          instructions={instructions}
+          title={drink.title}
+          measure1={drink.measure1}
+          ingredients1={drink.ingredient1}
+          measure2={drink.measure2}
+          ingredients2={drink.ingredient2}
+          measure3={drink.measure3}
+          ingredients3={drink.ingredient3}
+          measure4={drink.measure4}
+          ingredients4={drink.ingredient4}
+          measure5={drink.measure5}
+          ingredients5={drink.ingredient5}
+          measure6={drink.measure6}
+          ingredients6={drink.ingredient6}
+          measure7={drink.measure7}
+          ingredients7={drink.ingredient7}
+          measure8={drink.measure8}
+          ingredients8={drink.ingredient8}
+          measure9={drink.measure9}
+          ingredients9={drink.ingredient9}
+          measure10={drink.measure10}
+          ingredients10={drink.ingredient10}
+          instructions={drink.instructions}
           show={modalShow}
           onHide={() => setModalShow(false)}
         />
