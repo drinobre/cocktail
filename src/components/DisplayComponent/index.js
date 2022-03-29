@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Button } from "semantic-ui-react";
-import ModalComponent from "../ModalElement";
 import MyVerticallyCenteredModal from "../ModalElement";
 import { useState } from "react";
 
@@ -8,70 +7,43 @@ import { useState } from "react";
 //   // <ModalComponent class="direction-center">Read more</ModalComponent>
 // );
 
-export default function CardExampleCardProps({
-  idDrink,
-  measure1,
-  measure2,
-  measure3,
-  measure4,
-  measure5,
-  measure6,
-  measure7,
-  measure8,
-  measure9,
-  measure10,
-  ingredient1,
-  ingredient2,
-  ingredient3,
-  ingredient4,
-  ingredient5,
-  ingredient6,
-  ingredient7,
-  ingredient8,
-  ingredient9,
-  ingredient10,
-  instructions,
-  title,
-  alcoholic,
-  image,
-  alt,
-}) {
+export default function CardExampleCardProps(props) {
   const [modalShow, setModalShow] = useState(false);
   return (
     <>
-      <div key={idDrink}>
+      <div key={props.idDrink}>
         <Card>
-          <h3>{title}</h3>
-          <p>{alcoholic}</p>
-          <img src={image} alt={alt} />
+          <h3>{props.title}</h3>
+          <p>{props.alcoholic}</p>
+          <img src={props.image} alt={props.alt} />
         </Card>
         <Button variant="primary" onClick={() => setModalShow(true)}>
           Read more
         </Button>
 
         <MyVerticallyCenteredModal
-          title={title}
-          measure1={measure1}
-          ingredients1={ingredient1}
-          measure2={measure2}
-          ingredients2={ingredient2}
-          measure3={measure3}
-          ingredients3={ingredient3}
-          measure4={measure4}
-          ingredients4={ingredient4}
-          measure5={measure5}
-          ingredients5={ingredient5}
-          measure6={measure6}
-          ingredients6={ingredient6}
-          measure7={measure7}
-          ingredients7={ingredient7}
-          measure8={measure8}
-          ingredients8={ingredient8}
-          measure9={measure9}
-          ingredients9={ingredient9}
-          measure10={measure10}
-          ingredients10={ingredient10}
-          instructions={instructions}
+          title={props.title}
+          measure1={props.measure1}
+          ingredients1={props.ingredient1}
+          measure2={props.measure2}
+          ingredients2={props.ingredient2}
+          measure3={props.measure3}
+          ingredients3={props.ingredient3}
+          measure4={props.measure4}
+          ingredients4={props.ingredient4}
+          measure5={props.measure5}
+          ingredients5={props.ingredient5}
+          measure6={props.measure6}
+          ingredients6={props.ingredient6}
+          measure7={props.measure7}
+          ingredients7={props.ingredient7}
+          measure8={props.measure8}
+          ingredients8={props.ingredient8}
+          measure9={props.measure9}
+          ingredients9={props.ingredient9}
+          measure10={props.measure10}
+          ingredients10={props.ingredient10}
+          instructions={props.instructions}
           show={modalShow}
           onHide={() => setModalShow(false)}
         />
