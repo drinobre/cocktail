@@ -254,6 +254,12 @@ ul {
 a {
   color: white !important;
 }
+.card-surprise-me-container{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card-surprise-me {
   /* border-color: red; */

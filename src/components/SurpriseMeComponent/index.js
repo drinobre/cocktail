@@ -30,7 +30,7 @@ export default function SurpriseMeComponent() {
   // }
 
   return (
-    <div>
+    <div className="card-surprise-me-container">
       <div className="card-surprise-me">
         <div>
           <h1 className="paddings">{data.drinks[0].strDrink}</h1>
