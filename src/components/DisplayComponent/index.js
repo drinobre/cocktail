@@ -13,11 +13,11 @@ export default function CardExampleCardProps(props) {
     <>
       <div key={props.idDrink}>
         <Card>
-          <h3>{props.title}</h3>
+          <h3 id="font">{props.title}</h3>
           <p>{props.alcoholic}</p>
           <img src={props.image} alt={props.alt} />
         </Card>
-        <Button variant="primary" onClick={() => setModalShow(true)}>
+        <Button id="font" variant="primary" onClick={() => setModalShow(true)}>
           Read more
         </Button>
 

@@ -22,13 +22,16 @@ export default function SearchComponent() {
       <div className="search-group">
         <Input
           className="input"
+          id="font"
           onChange={handleChange}
           placeholder="Search by Cocktail name..."
         />
-        <Button onClick={handleClick}>Search</Button>
+        <Button id="font" onClick={handleClick}>
+          Search
+        </Button>
       </div>
       <div>
-        <SearchResults input={apiSearch} />
+        <SearchResults id="font" input={apiSearch} />
       </div>
     </>
   );

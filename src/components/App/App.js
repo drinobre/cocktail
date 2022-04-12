@@ -7,7 +7,7 @@ import NavBar from "../Navbar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="font">
       <NavBar />
       <Routes>
         <Route path="cocktail/" element={<HomePage />} />

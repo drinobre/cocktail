@@ -33,7 +33,9 @@ export default function SurpriseMeComponent() {
     <div className="card-surprise-me-container">
       <div className="card-surprise-me">
         <div>
-          <h1 className="paddings">{data.drinks[0].strDrink}</h1>
+          <h1 id="font" className="paddings">
+            {data.drinks[0].strDrink}
+          </h1>
         </div>
         <div className="single-card">
           <div className="image-card">
@@ -49,7 +51,7 @@ export default function SurpriseMeComponent() {
               src={data.drinks[0].strDrinkThumb}
               alt="Cocktail"
             /> */}
-            <h4>Ingredients</h4>
+            <h4 id="font">Ingredients</h4>
             <ul>
               <li>
                 {data.drinks[0].strMeasure1}
@@ -92,7 +94,7 @@ export default function SurpriseMeComponent() {
                 {data.drinks[0].strIngredient10}
               </li>
             </ul>
-            <h4>How to prepare</h4>
+            <h4 id="font">How to prepare</h4>
             <p>{data.drinks[0].strInstructions}</p>
           </div>
         </div>
