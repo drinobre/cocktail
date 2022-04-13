@@ -25,20 +25,7 @@ body {
 }
 
 
-.footer {
-  color: lightgray;
-  display: flex;
-  /* position: absolute; */
-  left: 0;
-  bottom: 0;
-  flex-direction: row;
-  background-color: #3f37c9;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
 /* Navbar */
-
 .navbar-container {
   display: flex;
   justify-content: flex-end;
@@ -52,6 +39,26 @@ body {
 
 .navbar-link {
   margin-right: 1rem;
+}
+
+/* Footer */
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: lightgray;
+  background-color: #3f37c9;
+  padding: 1rem;
+  text-align: justify;
+}
+
+@media (max-width:730px) {
+  .mobile-hidden{
+    display:none;
+  }  
 }
 
 .single-card {

@@ -1,11 +1,11 @@
 // Source: https://react.semantic-ui.com/elements/button#variations-social
-// CHECK COLOURS ARE NOT WORKING
 
 import React from "react";
 import { Button, Icon } from "semantic-ui-react";
 
 const ButtonSocial = () => (
-  <div>
+  <div className="mobile-hidden">
+    <Button color="purple">Portfolio</Button>
     <Button color="linkedin">
       <Icon name="linkedin" /> Linkedin
     </Button>

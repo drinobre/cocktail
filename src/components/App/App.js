@@ -13,33 +13,11 @@ function App() {
         <Route path="cocktail/" element={<HomePage />} />
         <Route path="cocktail/surprise_me" element={<SurpriseMePage />}></Route>
       </Routes>
-      {/* <header className="App-header">Fancy having a Cocktail today?</header> */}
       <footer>
-        <Footer copyright={"Created and designed by Adriana Nobre Lawrence"} />
+        <Footer copyright={"Created and designed by Adriana Lawrence"} />
       </footer>
     </div>
   );
 }
-
-// import Button from "react-bootstrap/Button";
-// import React from "react";
-// import MyVerticallyCenteredModal from "../ModalElement";
-
-// function App() {
-//   const [modalShow, setModalShow] = React.useState(false);
-
-//   return (
-//     <>
-//       <Button variant="primary" onClick={() => setModalShow(true)}>
-//         Launch vertically centered modal
-//       </Button>
-
-//       <MyVerticallyCenteredModal
-//         show={modalShow}
-//         onHide={() => setModalShow(false)}
-//       />
-//     </>
-//   );
-// }
 
 export default App;

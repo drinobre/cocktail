@@ -3,11 +3,11 @@ import ButtonSocial from "../ButtonSocial";
 
 export default function Footer({ copyright }) {
   return (
-    <footer class="footer">
+    <div>
       <div>{copyright}</div>
       <div>
         <ButtonSocial />
       </div>
-    </footer>
+    </div>
   );
 }
