@@ -94,6 +94,7 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - [Bug on semantic UI](https://github.com/Semantic-Org/Semantic-UI-React/issues/4287)
 - Implement modals
   -- The documentation doesn't mentioned about what you have to import for the css to work. Therefore, I didn't import 'bootstrap/dist/css/bootstrap.min.css' for the style and the content was rendered on the bottom of the page without any style.
+- Overwrite the SemanticUI font: you have to provide an id to the h1 to h4. The more specific the CSS selector > is the priority.
 
 ## References
 

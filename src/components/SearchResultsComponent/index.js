@@ -1,10 +1,7 @@
 import useFetch from "../../hooks/useFetch";
 import CardExampleCardProps from "../DisplayComponent";
-import { useState } from "react";
-import MyVerticallyCenteredModal from "../ModalElement";
-import Button from "react-bootstrap/Button";
 
-export default function SearchResults({ newResults, input }) {
+export default function SearchResults({ input }) {
   const url = `https://thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
 
   const { data, error } = useFetch(url);
@@ -23,8 +20,8 @@ export default function SearchResults({ newResults, input }) {
 
   return (
     <>
-      <section class="container-multiple-cards">
-        {/* map the fetch data with array name "drinks" and add the propety name from the object */}
+      <div className="container-multiple-cards">
+        {/* map the fetch data with array name "drinks" and add the property name from the object */}
         {data.drinks.map(function ({
           idDrink,
           strDrink,
@@ -54,7 +51,7 @@ export default function SearchResults({ newResults, input }) {
         }) {
           return (
             <>
-              <div class="multiple-cards">
+              <div className="multiple-cards">
                 <CardExampleCardProps
                   key={idDrink}
                   title={strDrink}
@@ -87,7 +84,7 @@ export default function SearchResults({ newResults, input }) {
             </>
           );
         })}
-      </section>
+      </div>
     </>
   );
 }

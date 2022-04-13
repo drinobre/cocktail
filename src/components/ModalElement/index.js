@@ -16,11 +16,11 @@ export default function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          <h2>{props.title}</h2>
+          <h2 id="font">{props.title}</h2>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h3>Ingredients</h3>
+        <h3 id="font">Ingredients</h3>
         <ul>
           <li>
             {props.measure1} {props.ingredients1}
@@ -53,7 +53,7 @@ export default function MyVerticallyCenteredModal(props) {
             {props.measure10} {props.ingredients10}
           </li>
 
-          <h3>How to prepare</h3>
+          <h3 id="font">How to prepare</h3>
           <p>{props.instructions}</p>
         </ul>
       </Modal.Body>

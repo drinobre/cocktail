@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import useFetch from "../../hooks/useFetch";
 
 export default function SurpriseMeComponent() {
@@ -5,44 +6,32 @@ export default function SurpriseMeComponent() {
 
   const { data, error } = useFetch(url);
 
-  if (error) {
-    return <p>Error!</p>;
-  }
-
-  // Provide users a sense of status
   if (!data) {
     return <p>Loading ...</p>;
   }
 
-  // function checkNumber(number) {
-  //   const measure = data.drinks[0].strMeasure;
-
-  //   if (data.drinks[0].strMeasure`${number}` !== "null") {
-  //     return measure`${number}`;
-  //   }
-  // }
+  if (error) {
+    return <p>Error!</p>;
+  }
 
   return (
-    <div>
-      <div class="card-surprise-me">
+    <div className="card-surprise-me-container">
+      <div className="card-surprise-me">
         <div>
-          <h1 class="paddings">{data.drinks[0].strDrink}</h1>
+          <h1 id="font" className="paddings">
+            {data.drinks[0].strDrink}
+          </h1>
         </div>
-        <div class="single-card">
-          <div class="image-card">
+        <div>
+          <div className="image-card">
             <img
-              class="img_size_medium"
+              className="img_size_medium"
               src={data.drinks[0].strDrinkThumb}
               alt="Cocktail"
             />
           </div>
-          <div class="description-card">
-            {/* <img
-              class="img_size_medium"
-              src={data.drinks[0].strDrinkThumb}
-              alt="Cocktail"
-            /> */}
-            <h4>Ingredients</h4>
+          <div className="description-card">
+            <h3 id="font">Ingredients</h3>
             <ul>
               <li>
                 {data.drinks[0].strMeasure1}
@@ -85,7 +74,7 @@ export default function SurpriseMeComponent() {
                 {data.drinks[0].strIngredient10}
               </li>
             </ul>
-            <h4>How to prepare</h4>
+            <h3 id="font">How to prepare</h3>
             <p>{data.drinks[0].strInstructions}</p>
           </div>
         </div>
