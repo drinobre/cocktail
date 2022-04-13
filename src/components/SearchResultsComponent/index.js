@@ -19,7 +19,7 @@ export default function SearchResults({ input }) {
   //   console.log(data.drinks[0]);
 
   return (
-    <div className="card-container">
+    <>
       <div className="container-multiple-cards">
         {/* map the fetch data with array name "drinks" and add the property name from the object */}
         {data.drinks.map(function ({
@@ -85,6 +85,6 @@ export default function SearchResults({ input }) {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }

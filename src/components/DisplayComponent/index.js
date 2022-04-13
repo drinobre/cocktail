@@ -3,10 +3,6 @@ import { Card, Button } from "semantic-ui-react";
 import MyVerticallyCenteredModal from "../ModalElement";
 import { useState } from "react";
 
-// const extra = (
-//   // <ModalComponent class="direction-center">Read more</ModalComponent>
-// );
-
 export default function CardExampleCardProps(props) {
   const [modalShow, setModalShow] = useState(false);
   return (

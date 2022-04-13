@@ -59,6 +59,17 @@ footer > div {
   justify-content: center;
   gap: 20px;
   background-image: linear-gradient(rgb(233,235,239), rgb(254, 254, 255));
+  text-align: center;
+}
+
+/* Style for single cards - how the items inside each card will be displayed */
+.multiple-cards {
+  display: flex;
+  flex-direction: column; 
+  border: black;
+  -ms-flex-align: center;
+  padding-top: 10px;
+  padding-bottom: 1rem;
 }
 
 
@@ -66,17 +77,28 @@ footer > div {
 
 
 
-.single-card {
+/* Surprise me page */
+
+/* Card Title and body */
+.card-surprise-me-container{
+  display:flex;
+  align-items: center;
+  gap:10px;
+  margin: 2rem;
+}
+
+.card-surprise-me {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 246, 247);
+  border-radius: 3rem;
+}
+
+.card-surprise-me > div:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
 }
-
-/* .single-card > * {
-  flex: 1 1 80px;
-  padding: 2rem 0rem 0 0rem;
-} */
 
 .image-card {
   flex: 30%;
@@ -92,83 +114,19 @@ footer > div {
   font-size: 1.3rem;
 }
 
-/* .grid-2-container {
-  display: flex;
-  flex-wrap: wrap;
-  
-} */
-
 .img_size_medium {
   border-radius: 50%;
   width: 100%;
   padding: 2rem;
 }
 
-/* button {
-  display: center;
-} */
 
-/* Style for single cards */
-.multiple-cards {
-  display: flex;
-  /* flex-direction: wrap; */
-  /* background-color: red; */
-  flex-direction: column; /* how the items inside each card will be displayed */
-  border: black;
-  /* padding-bottom: 10px 10px 10px 10px; */
-  -ms-flex-align: center;
-  padding-top: 10px;
-  padding-bottom: 1rem;
-}
-/* 
-.testing {
-  display: flex;
-  flex-direction: wrap;
-  background-color: yellow;
-  flex-direction: column;
-  flex: 1fr 1fr 25%;
-} */
-
-/* .displayCard-title {
-  position: flex;
-  flex-direction: wrap;
-  background-color: blue;
-} */
-
-h2 {
+h1, h2, h3, h4, Button {
   text-align: center;
+  line-height: 2
 }
 
 h1 {
-  text-align: center;
-  color: #3f37c9;
-  /* padding-top: 10rem; */
-}
-
-h3 {
-  text-align: center;
-  margin-right: 30%;
-}
-
-.background {
-  /* background-color: #f6f8f9; */
-  text-align: center;
-}
-
-.direction-center {
-  color: lightgray;
-  display: flex;
-  -ms-flex-align: center;
-  background-color: #3f37c9;
-}
-
-.display-middle {
-  display: flex;
-  -ms-flex-align: center;
-  padding: 2% 15% 0% 15%;
-}
-
-Header {
   color: #3f37c9;
 }
 
@@ -176,12 +134,19 @@ h3 {
   padding: 0 10% 0% 10%;
 }
 
-.container {
-  padding-top: 8rem;
+/* .display-middle {
+  display: flex;
+  -ms-flex-align: center;
+  padding: 2% 15% 0% 15%;
+} */
+
+Header {
+  color: #3f37c9;
 }
 
-Button {
-  text-align: center;
+
+.container {
+  padding-top: 8rem;
 }
 
 .paddings {
@@ -201,30 +166,15 @@ ul {
 a {
   color: white !important;
 }
-.card-surprise-me-container{
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-surprise-me {
-  /* border-color: red; */
-  /* border-style: double; */
-  margin: 2rem 10rem 2rem 10rem;
-  box-shadow: 3rem;
-  background-color: rgb(243, 246, 247);
-  border-radius: 3rem;
-  max-width: 100%;
-}
 
 #root {
-  background: rgb(246, 247, 249);
+  /* background: rgb(246, 247, 249); */
   background: linear-gradient(
     180deg,
     rgba(246, 247, 249, 1) 22%,
     rgba(170, 177, 189, 1) 82%
   );
+  /* background: rgb(63,55,201); */
 }
 
 @media (max-width:730px) {

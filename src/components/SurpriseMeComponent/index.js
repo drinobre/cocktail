@@ -6,13 +6,6 @@ export default function SurpriseMeComponent() {
 
   const { data, error } = useFetch(url);
 
-  // useEffect(() => {
-  //   // Provide users a sense of status
-  //   if (!data) {
-  //     return <p>Loading ...</p>;
-  //   }
-  // }, []);
-
   if (!data) {
     return <p>Loading ...</p>;
   }
@@ -20,14 +13,6 @@ export default function SurpriseMeComponent() {
   if (error) {
     return <p>Error!</p>;
   }
-
-  // function checkNumber(number) {
-  //   const measure = data.drinks[0].strMeasure;
-
-  //   if (data.drinks[0].strMeasure`${number}` !== "null") {
-  //     return measure`${number}`;
-  //   }
-  // }
 
   return (
     <div className="card-surprise-me-container">
@@ -37,7 +22,7 @@ export default function SurpriseMeComponent() {
             {data.drinks[0].strDrink}
           </h1>
         </div>
-        <div className="single-card">
+        <div>
           <div className="image-card">
             <img
               className="img_size_medium"
@@ -46,12 +31,7 @@ export default function SurpriseMeComponent() {
             />
           </div>
           <div className="description-card">
-            {/* <img
-              className="img_size_medium"
-              src={data.drinks[0].strDrinkThumb}
-              alt="Cocktail"
-            /> */}
-            <h4 id="font">Ingredients</h4>
+            <h3 id="font">Ingredients</h3>
             <ul>
               <li>
                 {data.drinks[0].strMeasure1}
@@ -94,7 +74,7 @@ export default function SurpriseMeComponent() {
                 {data.drinks[0].strIngredient10}
               </li>
             </ul>
-            <h4 id="font">How to prepare</h4>
+            <h3 id="font">How to prepare</h3>
             <p>{data.drinks[0].strInstructions}</p>
           </div>
         </div>
