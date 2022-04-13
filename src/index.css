@@ -55,12 +55,6 @@ footer > div {
   text-align: justify;
 }
 
-@media (max-width:730px) {
-  .mobile-hidden{
-    display:none;
-  }  
-}
-
 .single-card {
   display: flex;
   flex-wrap: wrap;
@@ -269,4 +263,10 @@ a {
     rgba(246, 247, 249, 1) 22%,
     rgba(170, 177, 189, 1) 82%
   );
+}
+
+@media (max-width:730px) {
+  .mobile-hidden{
+    display:none;
+  }  
 }
