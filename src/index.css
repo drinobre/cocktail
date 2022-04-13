@@ -4,26 +4,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App{
+.App, #font{
   font-family: "Syne Mono", monospace;
 }
-
-#font{
-  font-family: "Syne Mono", monospace;
-}
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
-
-.search-group {
-  display: flex;
-  justify-content: center;
-  padding: 5% 0px 5% 5px;
-  font-family: "Syne Mono", monospace;
-}
-
 
 /* Navbar */
 .navbar-container {
@@ -52,14 +35,42 @@ footer > div {
   color: lightgray;
   background-color: #3f37c9;
   padding: 1rem;
-  text-align: justify;
+  text-align: center;
 }
+
+/* Main */
+
+/* Input and Search Button */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5% 0 5% 5%;
+}
+
+/* Search results */
+
+.container-multiple-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+  background-image: linear-gradient(rgb(233,235,239), rgb(254, 254, 255));
+}
+
+
+
+
+
 
 .single-card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* padding: 5px; */
+
 }
 
 /* .single-card > * {
@@ -123,16 +134,6 @@ footer > div {
   flex-direction: wrap;
   background-color: blue;
 } */
-.container-multiple-cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0px 20px 20px 20px;
-  width: auto;
-  height: auto;
-  background-image: linear-gradient(rgb(254, 254, 255), rgb(244, 245, 247));
-}
 
 h2 {
   text-align: center;
@@ -176,47 +177,8 @@ h3 {
 }
 
 .container {
-  padding-top: 2.5rem;
+  padding-top: 8rem;
 }
-
-/* Source: https://wweb.dev/resources/css-separator-generator/    */
-/* .container {
-  padding-top: 2rem;
-  position: relative;
-  background: rgb(244, 245, 247);
-  height: 50vh;
-} */
-
-/* .wave {
-  position: absolute;
-  height: 78px;
-  width: 100%;
-  background: rgb(244, 245, 247);
-  bottom: 0;
-}
-
-.wave::before,
-.wave::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-}
-
-.wave::before {
-  width: 55%;
-  height: 109%;
-  background-color: #fff;
-  right: -1.5%;
-  top: 60%;
-}
-.wave::after {
-  width: 55%;
-  height: 100%;
-  background-color: rgb(244, 245, 247);
-  left: -1.5%;
-  top: 40%;
-} */
 
 Button {
   text-align: center;

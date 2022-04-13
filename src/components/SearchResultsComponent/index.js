@@ -19,8 +19,8 @@ export default function SearchResults({ input }) {
   //   console.log(data.drinks[0]);
 
   return (
-    <>
-      <section className="container-multiple-cards">
+    <div className="card-container">
+      <div className="container-multiple-cards">
         {/* map the fetch data with array name "drinks" and add the property name from the object */}
         {data.drinks.map(function ({
           idDrink,
@@ -84,7 +84,7 @@ export default function SearchResults({ input }) {
             </>
           );
         })}
-      </section>
-    </>
+      </div>
+    </div>
   );
 }

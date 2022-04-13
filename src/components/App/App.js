@@ -13,6 +13,7 @@ function App() {
         <Route path="cocktail/" element={<HomePage />} />
         <Route path="cocktail/surprise_me" element={<SurpriseMePage />}></Route>
       </Routes>
+      <main></main>
       <footer>
         <Footer copyright={"Created and designed by Adriana Lawrence"} />
       </footer>

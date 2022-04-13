@@ -19,12 +19,11 @@ export default function SearchComponent() {
 
   return (
     <>
-      <div className="search-group">
+      <div className="search-container">
         <Input
-          className="input"
           id="font"
           onChange={handleChange}
-          placeholder="Search by Cocktail name..."
+          placeholder="Search by Cocktail..."
         />
         <Button id="font" onClick={handleClick}>
           Search
