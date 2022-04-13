@@ -8,15 +8,7 @@ body {
   font-family: "Syne Mono", monospace;
 }
 
-section, div{
-  font-family: "Syne Mono", monospace;
-}
-
 #font{
-  font-family: "Syne Mono", monospace;
-}
-
-h4 {
   font-family: "Syne Mono", monospace;
 }
 
@@ -32,12 +24,6 @@ h4 {
   font-family: "Syne Mono", monospace;
 }
 
-/* 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  border: red;
-} */
 
 .footer {
   color: lightgray;
@@ -51,31 +37,17 @@ h4 {
   padding: 1rem;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #3f37c9;
-  padding: 10px;
-  color: lightgray !important;
-}
+/* Navbar */
 
-.navbar-left {
-  display: inherit;
-  justify-content: flex-start;
-  align-items: center;
-  /* margin: 5% 5% 5% 0; */
-  color: #f2f2f2;
-  font-size: 17px;
-}
-
-.navbar-right {
+.navbar-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: #f2f2f2;
+  height: 50px;
+  gap: 10px;
+  background-color: #3f37c9;
+  color: lightgray !important;
   font-size: 17px;
-  color: rgb(63, 55, 201);
 }
 
 .navbar-link {
