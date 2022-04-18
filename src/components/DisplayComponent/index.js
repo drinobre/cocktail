@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Button } from "semantic-ui-react";
-import MyVerticallyCenteredModal from "../ModalElement";
+import ExpandableCard from "../ModalElement";
 import { useState } from "react";
 
-export default function CardExampleCardProps(props) {
+export default function DisplayCards(props) {
   const [modalShow, setModalShow] = useState(false);
   return (
     <>
@@ -17,7 +17,7 @@ export default function CardExampleCardProps(props) {
           Read more
         </Button>
 
-        <MyVerticallyCenteredModal
+        <ExpandableCard
           title={props.title}
           measure1={props.measure1}
           ingredients1={props.ingredient1}

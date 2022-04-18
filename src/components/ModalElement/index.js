@@ -1,11 +1,20 @@
 // use React build-in Modal
 // display additional description about the drink - Measure, Ingredients and Instructions
 
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function MyVerticallyCenteredModal(props) {
+export default function ExpandableCard(props) {
+  for (let number = 1; number <= 15; number++) {
+    function concatenate(objectName) {
+      console.log((objectName += number));
+      return (objectName += number);
+    }
+    concatenate(props.drink);
+  }
+
   return (
     <Modal
       className="modal-display"
@@ -22,6 +31,7 @@ export default function MyVerticallyCenteredModal(props) {
       <Modal.Body>
         <h3 id="font">Ingredients</h3>
         <ul>
+          {/* <li>{props.drink}</li> */}
           <li>
             {props.measure1} {props.ingredients1}
           </li>

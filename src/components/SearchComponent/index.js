@@ -21,11 +21,12 @@ export default function SearchComponent() {
     <>
       <div className="search-container">
         <Input
+          className="input"
           id="font"
           onChange={handleChange}
           placeholder="Search by Cocktail..."
         />
-        <Button id="font" onClick={handleClick}>
+        <Button className="search" id="font" onClick={handleClick}>
           Search
         </Button>
       </div>

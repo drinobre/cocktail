@@ -1,5 +1,6 @@
+import React from "react";
 import useFetch from "../../hooks/useFetch";
-import CardExampleCardProps from "../DisplayComponent";
+import DisplayCards from "../DisplayComponent";
 
 export default function SearchResults({ input }) {
   const url = `https://thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
@@ -22,7 +23,7 @@ export default function SearchResults({ input }) {
     <>
       <div className="container-multiple-cards">
         {/* map the fetch data with array name "drinks" and add the property name from the object */}
-        {data.drinks.map(function ({
+        {data.drinks.map(function({
           idDrink,
           strDrink,
           strDrinkThumb,
@@ -52,7 +53,7 @@ export default function SearchResults({ input }) {
           return (
             <>
               <div className="multiple-cards">
-                <CardExampleCardProps
+                <DisplayCards
                   key={idDrink}
                   title={strDrink}
                   image={strDrinkThumb}

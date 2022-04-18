@@ -6,8 +6,6 @@ Create a single page APP where users can search for a specific drink from an API
 
 You can access the website at https://drinobre.github.io/cocktail/
 
-<!-- <img alt="plan" src="/cocktail_api/src/images/API_MVP.png" /> // Not working -->
-
 ## Functionalities
 
 Users will be able to interact with the API by:
@@ -40,7 +38,7 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - Create the folder Components > App and add the app files automatically created by React
 - Change the file location for APP and image in the import
 - Test the APP (npm start)
-</details>
+  </details>
 
 <details>
 <summary>Creating components</summary>
@@ -48,7 +46,7 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - Create separate folders for each component, which will be rendered on the main APP (for example, buttons, display ...)
 - Create the index.js file into each component, which they will handle a function containing a return in JSX format.
 - `Note: the return must be inside a <div> or <> tag`.
-</details>
+  </details>
 
 <details>
 <summary>Creating custom Hook</summary>
@@ -82,8 +80,27 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - Note: make sure to add the [bootstrap/dist/css/bootstrap.min.css](https://react-bootstrap.github.io/getting-started/introduction/#css) for styling.
 
 </details>
-  
+
+<details>
+<summary>Typescript</summary>
+
+- install [Typescript](https://www.typescriptlang.org/download) > npm install typescript --save-dev;
+- Compile > npx tsc.
+- Ps. when running the script test and have a ts dependence. The script will create a tsconfig.json file.
+
+</details>
+
+<details>
+<summary>Cypress</summary>
+
+- install [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) > npm install cypress --save-dev;
+- open it using npx cypress open (best to add scripts to package.json)
+- Ps. when running the script test and have a ts dependence. The script will create a tsconfig.json file.
+
+</details>
+
 ## Learnings and Challenges
+
 - Use of the tag <Headers> when creating pages;
 - Create custom Hook to Fetch data;
 - Use of Routes (multiple pages APP);

@@ -1,6 +1,12 @@
+import React from "react";
 import useFetch from "../../hooks/useFetch";
+//import List from "../List";
 
 export default function SurpriseMeComponent() {
+  // type url = String;
+  // type data<T> = Array<string>;
+  // type drink = Array<Array<{ drinks: string }>>;
+
   const url = "https://thecocktaildb.com/api/json/v1/1/random.php";
 
   const { data, error } = useFetch(url);
@@ -12,6 +18,8 @@ export default function SurpriseMeComponent() {
   if (error) {
     return <p>Error!</p>;
   }
+
+  console.log(data);
 
   let drink = data.drinks[0];
 
