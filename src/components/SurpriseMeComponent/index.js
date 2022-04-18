@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import useFetch from "../../hooks/useFetch";
 
 export default function SurpriseMeComponent() {
@@ -14,19 +13,21 @@ export default function SurpriseMeComponent() {
     return <p>Error!</p>;
   }
 
+  let drink = data.drinks[0];
+
   return (
     <div className="card-surprise-me-container">
       <div className="card-surprise-me">
         <div>
           <h1 id="font" className="paddings">
-            {data.drinks[0].strDrink}
+            {drink.strDrink}
           </h1>
         </div>
         <div>
           <div className="image-card">
             <img
               className="img_size_medium"
-              src={data.drinks[0].strDrinkThumb}
+              src={drink.strDrinkThumb}
               alt="Cocktail"
             />
           </div>
@@ -34,48 +35,48 @@ export default function SurpriseMeComponent() {
             <h3 id="font">Ingredients</h3>
             <ul>
               <li>
-                {data.drinks[0].strMeasure1}
-                {data.drinks[0].strIngredient1}
+                {drink.strMeasure1}
+                {drink.strIngredient1}
               </li>
               <li>
-                {data.drinks[0].strMeasure2}
-                {data.drinks[0].strIngredient2}
+                {drink.strMeasure2}
+                {drink.strIngredient2}
               </li>
               <li>
-                {data.drinks[0].strMeasure3}
-                {data.drinks[0].strIngredient3}
+                {drink.strMeasure3}
+                {drink.strIngredient3}
               </li>
               <li>
-                {data.drinks[0].strMeasure4}
-                {data.drinks[0].strIngredient4}
+                {drink.strMeasure4}
+                {drink.strIngredient4}
               </li>
               <li>
-                {data.drinks[0].strMeasure5}
-                {data.drinks[0].strIngredient5}
+                {drink.strMeasure5}
+                {drink.strIngredient5}
               </li>
               <li>
-                {data.drinks[0].strMeasure6}
-                {data.drinks[0].strIngredient6}
+                {drink.strMeasure6}
+                {drink.strIngredient6}
               </li>
               <li>
-                {data.drinks[0].strMeasure7}
-                {data.drinks[0].strIngredient7}
+                {drink.strMeasure7}
+                {drink.strIngredient7}
               </li>
               <li>
-                {data.drinks[0].strMeasure8}
-                {data.drinks[0].strIngredient8}
+                {drink.strMeasure8}
+                {drink.strIngredient8}
               </li>
               <li>
-                {data.drinks[0].strMeasure9}
-                {data.drinks[0].strIngredient9}
+                {drink.strMeasure9}
+                {drink.strIngredient9}
               </li>
               <li>
-                {data.drinks[0].strMeasure10}
-                {data.drinks[0].strIngredient10}
+                {drink.strMeasure10}
+                {drink.strIngredient10}
               </li>
             </ul>
             <h3 id="font">How to prepare</h3>
-            <p>{data.drinks[0].strInstructions}</p>
+            <p>{drink.strInstructions}</p>
           </div>
         </div>
       </div>
