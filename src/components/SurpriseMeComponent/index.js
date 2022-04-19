@@ -4,7 +4,7 @@ import useFetch from "../../hooks/useFetch";
 
 export default function SurpriseMeComponent() {
   // type url = String;
-  // type data<T> = Array<string>;
+  // type data<T> = Array<T>;
   // type drink = Array<Array<{ drinks: string }>>;
 
   const url = "https://thecocktaildb.com/api/json/v1/1/random.php";

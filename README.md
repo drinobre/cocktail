@@ -19,9 +19,7 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 
 #### Components Tree
 
-- App
-  -- Search
-  -- Display
+![image info](./public/plan_components.png)
 
 #### Third-party Libraries
 
@@ -106,21 +104,20 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 
 ## Learnings and Challenges
 
-- Use of the tag <Headers> when creating pages;
 - Create custom Hook to Fetch data;
 - Use of Routes (multiple pages APP);
-- How to use Modal;
 - How to save an image on README file (format SVG or add the image on File);
 - When mapping the array make sure to add the data fetched and the name of the const. For example, data.drinks.map();
 - Import the semantic UI on the main index.js file;
-- [Bug on semantic UI](https://github.com/Semantic-Org/Semantic-UI-React/issues/4287)
+- [Bug on semantic UI](https://github.com/Semantic-Org/Semantic-UI-React/issues/4287). After removing the additional ";" from node/modules make sure you do npm i otherwise there wouldn't be any update.
 - Implement modals
   -- The documentation doesn't mentioned about what you have to import for the css to work. Therefore, I didn't import 'bootstrap/dist/css/bootstrap.min.css' for the style and the content was rendered on the bottom of the page without any style.
 - Overwrite the SemanticUI font: you have to provide an id to the h1 to h4. The more specific the CSS selector > is the priority.
+- Use of the tag <Headers> when creating pages;
+- Aligning the cards using css. I was justify-content: space-between to align the cards but when the value on the last row was 2 cards they were displayed as first and last card. Therefore, I have used justify-content: space-between and justify-content: center on the container-multiple-cards.
 
 ## References
 
 - https://thecocktaildb.com/api.php
 - https://beta.reactjs.org/
-- https://wweb.dev/resources/css-separator-generator/
 - https://www.npmjs.com/package/gh-pages
