@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import SearchResults from "../SearchResultsComponent";
 import { Button, Input } from "semantic-ui-react";
 

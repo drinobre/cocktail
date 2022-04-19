@@ -13,7 +13,12 @@ export default function DisplayCards(props) {
           <p>{props.alcoholic}</p>
           <img src={props.image} alt={props.alt} />
         </Card>
-        <Button id="font" variant="primary" onClick={() => setModalShow(true)}>
+        <Button
+          className="read-more"
+          id="font"
+          variant="primary"
+          onClick={() => setModalShow(true)}
+        >
           Read more
         </Button>
 

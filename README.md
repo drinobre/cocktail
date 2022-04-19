@@ -96,6 +96,11 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - install [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) > npm install cypress --save-dev;
 - open it using npx cypress open (best to add scripts to package.json)
 - Ps. when running the script test and have a ts dependence. The script will create a tsconfig.json file.
+- In order to run the tests in Cypress (using localhost) you must have the app running on local host first.
+
+![image info](./public/Test_navbar.png)
+
+![image info](./public/Test_Search.png)
 
 </details>
 

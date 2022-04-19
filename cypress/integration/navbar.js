@@ -8,12 +8,12 @@ describe("navigate to the surprise me page and return to home", () => {
     cy.contains("Surprise me").click();
   });
 
-  it("Loads surprise me page", () => {
-    cy.url().should("include", "/surprise-me");
+  it("load surprise me page", () => {
+    cy.url().should("include", "/surprise_me");
     cy.contains("Home").click();
   });
 
-  it("Return to the homepage", () => {
+  it("return to the homepage", () => {
     cy.url().should("include", "/");
   });
 });
