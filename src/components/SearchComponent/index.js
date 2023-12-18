@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import SearchResults from "../SearchResultsComponent";
-import { Button, Input } from "semantic-ui-react";
 
 export default function SearchComponent() {
   const [userInput, setUserInput] = useState("");
@@ -20,14 +19,14 @@ export default function SearchComponent() {
   return (
     <>
       <div className="search-container">
-        <Input
+        <input
           id="font"
           onChange={handleChange}
           placeholder="Search by Cocktail..."
         />
-        <Button id="font" onClick={handleClick}>
+        <button id="font" onClick={handleClick}>
           Search
-        </Button>
+        </button>
       </div>
       <div>
         <SearchResults id="font" input={apiSearch} />

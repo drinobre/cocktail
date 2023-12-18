@@ -1,21 +1,21 @@
 import React from "react";
-import { Card, Button } from "semantic-ui-react";
 import MyVerticallyCenteredModal from "../ModalElement";
 import { useState } from "react";
 
+// TODO: amend <p> to Card from MUI
 export default function CardExampleCardProps(props) {
   const [modalShow, setModalShow] = useState(false);
   return (
     <>
       <div key={props.idDrink}>
-        <Card>
+        <p>
           <h3 id="font">{props.title}</h3>
           <p>{props.alcoholic}</p>
           <img src={props.image} alt={props.alt} />
-        </Card>
-        <Button id="font" variant="primary" onClick={() => setModalShow(true)}>
+        </p>
+        <button id="font" variant="primary" onClick={() => setModalShow(true)}>
           Read more
-        </Button>
+        </button>
 
         <MyVerticallyCenteredModal
           title={props.title}

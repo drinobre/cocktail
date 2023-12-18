@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./components/App/App.js";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import "semantic-ui-css/semantic.css";
 
 ReactDOM.render(
   <BrowserRouter>

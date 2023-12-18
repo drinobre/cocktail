@@ -31,6 +31,7 @@ For this project, I will be using React.js to fetch the [Cocktail API](https://t
 - bootstrap: use to create the modals on the homepage.
 - semantic-ui: use to style the components.
 
+
 ## Implementation Plan
 
 <details>
